@@ -1,0 +1,452 @@
+/*
+  Theme Name: WhatsNap - SAAS Based Whtsapp Server and Bulk Sender
+  Theme URL: https://mediacity.co.in/whatsnap
+  Author: Media City
+  Author URI: https://mediacity.co.in/
+  Creation Date: 02 November 2023
+  Description: A default stylesheet for WhatsNap - SAAS Based Whtsapp Server and Bulk Sender
+  Version: 1.0
+*/
+
+/*=======================================================================
+              [Table of Contents]
+=========================================================================
+
+01. Typography 
+02.  General
+03. top main section
+04. feature main section
+05. Effortlessly Manage and Upload Photos
+06. Enhance Your Photography Portfolio and Connect with a Community section
+07. Optimize Your Site with SEO and Analytics Tools section 
+08.  Enjoy a Responsive, Cross-Browser Compatible Design (upload-second-photo) section
+09. Hear from Our Happy Users
+10. ques section
+11. newsletter section 
+12. footer section
+
+/* =============== Colors Used =====================
+
+  Red             : #ED2328; 
+  Black           : #0B0604;
+
+  
+
+ ===================================================*/
+
+
+/* ================================= */
+		/*===== Typography =====*/
+/* ================================= */
+
+:root {
+    --txt-color-white: whitesmoke;
+    --text-color-black:black;
+
+    --bg-color-green:rgb(25, 48, 25);
+    --bg-color-darkgreen: rgb(7, 43, 7) ;
+    --bg-colorgreen1:#E1EDBD;
+    --bg-colorgreen2:#B0CF98;
+    --bg-colorgreen3:#82B068;
+    --bg-colorgreen4:#719A5E;
+    --bg-colorgreen5:#5A8559;
+    --bg-colorgreen6:#426D54;
+    --bg-colorgreen7: #e5ece8;
+    
+    --heading-color-yellow:rgb(198, 198, 33);
+    --heading-color-white: whitesmoke;
+    --heading-color-black:black;
+    --heading-colorgreen3:#82B068;
+    --heading-colorgreen4:#719A5E;
+    --heading-colorgreen5:#5A8559;
+    --heading-colorgreen6:#426D54;
+    --heading-colorgreen7:#344e3f;
+    --heading-colorgreen7:#2d4135;
+    
+    --border-color-white:white;
+    --border-color-black:black;
+    --border-color-green:rgb(17, 90, 17);
+
+    --a-bg-color: rgb(17, 90, 17);
+
+}
+
+body {  
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: var(--txt-color-white);
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  html,
+  body {
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Work Sans', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 700;
+    color: var(--heading-colorgreen7);
+    margin: 0;  
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  a {  
+    color: var(--txt-color-white);
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  a:hover, 
+  a:focus {
+    color: #222;
+    text-decoration: none;
+  }
+  a:active {
+    color: #222;
+    text-decoration: none;
+  }
+  p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    color: var(--text-color-black);
+    font-size: 15px;
+  }
+  blockquote {  
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  /* ================================= */
+      /*===== General =====*/
+  /* ================================= */
+  
+  .overlay-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);   
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;      
+  }
+  .parallax {
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    position: relative;      
+  }
+  .btn-primary {  
+    padding: 9px 15px 9px;
+    margin-top: 15px;
+    color: var(--txt-color-white);
+    font-size: 15px;
+    background-color: var(--a-bg-color);
+    border: 1px solid var(--border-color-green); 
+    border-radius: 4px;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .btn-primary:hover {  
+    background-color: #F5F6FB;
+    color: #3A3A3A;
+    top: 2px;
+  }
+  .btn-primary:active {
+    box-shadow: 0 0 #222;
+    top: 6px;
+  }
+
+  .main-section-container{
+    background-color: var(--bg-colorgreen7);
+  }
+
+
+/* ================================= */
+/*===== top main section =====*/
+/* ================================= */
+
+.top-containt {
+    position: relative;
+    z-index: 1;
+}
+.top-main-block {
+    position: relative;
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 2.2;
+}
+ .top-heading {
+   color: var(--heading-color-white) ;
+}
+ .top-txt {
+    color: var(--txt-color-white);
+}
+.top-containt i {
+    color: white;
+}
+/* ================================= */
+/*===== feature main section =====*/
+/* ================================= */
+
+.feature-box {
+   
+    border: 2px solid var(--border-color-black);
+    border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:30px;
+      padding: 20px;
+  }
+  .feature-box:hover{
+    background: var(--bg-color-darkgreen);
+    color: var(--txt-color-white);
+  }
+
+.feature-box .icon {
+    font-size: 24px;
+
+    color: var(--heading-colorgreen7);
+}
+
+
+.features-header {
+    margin-bottom: 25px;
+}
+
+.features-main-section {
+    padding: 100px 0px;
+    
+}
+
+.icon {
+  padding: 10px;
+}
+.feature-box p {
+  margin-bottom: 0;
+}
+
+/* ================================= */
+/*===== Effortlessly Manage and Upload Photos =====*/
+/* ================================= */
+
+.uploadphoto-container {
+   padding:70px 0 ;
+
+}
+
+.uploadphoto-containt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+.upload-photo-img-container {
+    padding: 50px;
+
+}
+/* ================================= */
+/*===== Enhance Your Photography Portfolio and Connect with a Community section =====*/
+/* ================================= */
+
+.Photography-Portfolio-container {
+    padding: 70px;
+}
+
+/* ================================= */
+/*===== Optimize Your Site with SEO and Analytics Tools section =====*/
+/* ================================= */
+
+.Optimize-site-box {
+    margin: 20px 0px 40px 0px;
+    border: 2px solid var(--border-color-black);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100px;
+}
+
+.Optimize-site-box p{
+    font-weight: bold;
+} 
+
+.Optimize-site-container {
+   
+   padding: 70px;
+}
+.Optimize-site-box i{
+  color: var(--heading-colorgreen7);
+}
+
+/* ================================= */
+/*===== Enjoy a Responsive, Cross-Browser Compatible Design (upload-second-photo) section =====*/
+/* ================================= */
+
+
+.upload-second-photo-img {
+    padding: 50px;
+}
+
+.upload-second-photo-container {
+ 
+ padding: 70px;
+}
+
+.upload-second-photo-containt {
+   
+        margin: 150px 0;
+    
+}
+
+/* ================================= */
+/*===== Hear from Our Happy Users  =====*/
+/* ================================= */
+
+.happy-user-container {
+    border: 2px solid var(--border-color-black);
+    padding: 0px 50px;
+   
+    margin: 70px 50px;
+    display: flex;
+}
+
+
+
+.happy-user-img {
+  padding: 2px 0px;
+  border: 1px solid var(--border-color-white);
+  margin: 5px;
+  border-radius: 180px;
+  box-shadow: 4px 5px 5px 5px grey;
+} 
+
+.happy-user-containt {
+    padding: 20px;
+}
+
+.happy-user-img img{
+  height: 209px;
+  width: 300px;
+}
+
+.happy-user-maincontainer{
+    border: 2px solid var(--border-color-black);
+    box-shadow: 0px 6px 6px 4px gray;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px ;
+}
+
+.happy-user-mainsection{
+  padding: 70px;
+}
+/* ================================= */
+/*===== ques section  =====*/
+/* ================================= */
+
+.ques-section-container {
+   
+  
+  padding: 70px;
+}
+
+.accordion-body{
+    color: var(--text-color-black);
+    background-color: var(--bg-colorgreen7);
+}
+.faq-ques{
+    color: var(--heading-color-black);
+    background-color: var(--bg-colorgreen7);
+}
+
+
+
+
+
+/* ================================= */
+/*===== newsletter section  =====*/
+/* ================================= */
+
+
+
+
+
+.newsletter-containt{ 
+  padding: 20px;
+}
+
+.newsletter-head{
+  padding: 5px;
+  color: var(--text-color-black);
+}
+
+.newsletter-section-container{
+  background-color: var(--bg-colorgreen3);
+}
+
+
+
+/* ================================= */
+/*===== footer section  =====*/
+/* ================================= */
+
+
+
+.footer-section-container{
+  border: 2px solid black;
+  padding: 20px;
+  background-color: var(--bg-color-darkgreen);
+}
+
+.footer-content{
+  color: var(--txt-color-white);
+}
+
+
+
+
+
